@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>海外 PoC 補助計畫指南</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#243449;
+    --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --accent2:#34d399; --warn:#fbbf24;
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,#0f172a 0%,#131f38 60%,#0f2a3a 100%);color:var(--text);line-height:1.75}
+  .wrap{max-width:960px;margin:0 auto;padding:48px 24px 80px}
+  header{text-align:center;margin-bottom:48px}
+  .tag{display:inline-block;background:rgba(56,189,248,.15);color:var(--accent);border:1px solid rgba(56,189,248,.35);padding:4px 14px;border-radius:999px;font-size:.85rem;letter-spacing:2px;margin-bottom:16px}
+  h1{font-size:2rem;margin-bottom:12px}
+  .subtitle{color:var(--muted);max-width:640px;margin:0 auto}
+  .quote{background:rgba(56,189,248,.08);border-left:4px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:28px auto;max-width:680px;font-size:1.05rem}
+  .quote strong{color:var(--accent)}
+  .keypoint{background:var(--panel);border:1px solid rgba(148,163,184,.18);border-radius:14px;padding:16px 20px;margin:24px 0;display:flex;gap:12px;align-items:flex-start}
+  .keypoint .icon{font-size:1.3rem}
+  section{background:var(--panel);border:1px solid rgba(148,163,184,.18);border-radius:16px;padding:28px;margin-bottom:28px}
+  h2{font-size:1.3rem;color:var(--accent);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:rgba(56,189,248,.18);color:var(--accent);font-weight:700;font-size:1rem;flex:none}
+  h3{font-size:1.02rem;color:var(--text);margin:18px 0 6px}
+  p{color:var(--text);margin-bottom:10px}
+  .muted{color:var(--muted)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+  th{background:var(--panel2);color:var(--accent);text-align:left;padding:10px 12px;border-bottom:2px solid rgba(56,189,248,.3)}
+  td{padding:10px 12px;border-bottom:1px solid rgba(148,163,184,.15);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0}
+  .card{background:var(--panel2);border-radius:12px;padding:16px 18px;border:1px solid rgba(148,163,184,.15)}
+  .card h4{color:var(--accent2);font-size:.98rem;margin-bottom:8px}
+  .card ul{list-style:none}
+  .card li{padding:3px 0;font-size:.92rem;color:var(--text)}
+  .card li::before{content:"▪";color:var(--accent);margin-right:8px}
+  ul.plain{list-style:none;margin:8px 0 14px}
+  ul.plain li{padding:4px 0 4px 22px;position:relative}
+  ul.plain li::before{content:"✓";position:absolute;left:0;color:var(--accent2);font-weight:700}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:14px}
+  .kpi .card{text-align:center}
+  .kpi .big{font-size:1.6rem;font-weight:700;color:var(--warn);margin:6px 0 2px}
+  .case{background:linear-gradient(135deg,rgba(52,211,153,.10),rgba(56,189,248,.08));border:1px solid rgba(52,211,153,.35);border-radius:16px;padding:28px}
+  .case h2{color:var(--accent2)}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+  .badge{background:rgba(52,211,153,.15);color:var(--accent2);border:1px solid rgba(52,211,153,.35);padding:6px 14px;border-radius:999px;font-size:.88rem}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px}
+  @media (max-width:600px){h1{font-size:1.5rem}.wrap{padding:32px 16px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tag">OVERSEAS POC GUIDE</div>
+    <h1>海外 PoC 補助計畫指南</h1>
+    <p class="subtitle">適用於技術型公司：AI、CAE 模擬、熱管理、先進材料、智慧製造</p>
+  </header>
+
+  <div class="quote">
+    對技術型公司而言，海外 PoC 的本質不是賣產品，而是向海外客戶證明：<br/>
+    <strong>「這項技術真的能在你的場域產生價值，而且值得導入。」</strong>
+  </div>
+
+  <div class="keypoint">
+    <span class="icon">💡</span>
+    <div>政府願意補助的通常不是<strong>業務拜訪</strong>，而是<strong>驗證成本</strong>。</div>
+  </div>
+
+  <section>
+    <h2><span class="num">1</span>PoC 計畫書核心內容</h2>
+    <h3>海外客戶需求分析</h3>
+    <p>需說明：客戶是誰、位於哪個國家、屬於什麼產業、面臨什麼痛點。</p>
+    <table>
+      <tr><th>項目</th><th>內容</th></tr>
+      <tr><td>客戶</td><td>日本建材商</td></tr>
+      <tr><td>痛點</td><td>降低建築碳排</td></tr>
+      <tr><td>目標</td><td>評估 CLT 取代部分鋼材</td></tr>
+      <tr><td>驗證方式</td><td>實際結構測試</td></tr>
+    </table>
+    <p class="muted">審查委員最想看的是：<strong style="color:var(--warn)">為什麼這個 PoC 值得做？</strong></p>
+    <h3>技術驗證目標（量化指標）</h3>
+    <table>
+      <tr><th>領域</th><th>量化指標</th></tr>
+      <tr><td>AI 軟體</td><td>預測誤差 &lt; 5%、推論時間 &lt; 1 秒</td></tr>
+      <tr><td>Thermal Simulation</td><td>與實測誤差 &lt; 10%、模擬時間減少 50%</td></tr>
+      <tr><td>木材材料</td><td>強度提升 20%、含水率控制在 12% 以下</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>海外場域驗證（通常是補助最大宗）</h2>
+    <div class="cards">
+      <div class="card"><h4>實地安裝</h4><ul><li>感測器</li><li>邊緣運算設備</li><li>AI 系統</li></ul></div>
+      <div class="card"><h4>現場測試</h4><ul><li>工廠</li><li>醫院</li><li>發電廠</li><li>建築工地</li></ul></div>
+      <div class="card"><h4>長期數據收集</h4><ul><li>溫度</li><li>功率</li><li>良率</li><li>振動</li></ul></div>
+    </div>
+    <p class="muted">驗證期間：常見 1 個月、3 個月或 6 個月。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>產品性能驗證（需第三方數據）</h2>
+    <div class="cards">
+      <div class="card"><h4>AI 驗證</h4><ul><li>Accuracy</li><li>Precision</li><li>Recall</li></ul></div>
+      <div class="card"><h4>木材驗證</h4><ul><li>抗壓強度</li><li>抗彎強度</li><li>防火性能</li></ul></div>
+      <div class="card"><h4>熱管理材料</h4><ul><li>熱導率</li><li>散熱效率</li><li>熱循環壽命</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>國際認證準備（很多企業卡在這一步）</h2>
+    <table>
+      <tr><th>市場</th><th>認證</th></tr>
+      <tr><td>歐盟</td><td>CE</td></tr>
+      <tr><td>美國</td><td>UL、FCC</td></tr>
+      <tr><td>日本</td><td>JIS</td></tr>
+      <tr><td>醫療</td><td>ISO 13485、FDA</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>樣品打樣</h2>
+    <p>補助常涵蓋：</p>
+    <ul class="plain">
+      <li>Prototype（原型機）</li>
+      <li>機構件、電路板、測試設備、工程樣機</li>
+      <li>例如：AI Gateway、智慧感測器、Thermal Monitoring Device</li>
+    </ul>
+    <p>展示樣機供客戶驗證：<strong>功能、操作性、穩定性</strong>。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span>智財布局（很多人忽略，政府最希望做）</h2>
+    <div class="cards">
+      <div class="card"><h4>檢索與分析</h4><ul><li>專利檢索</li><li>Freedom to Operate</li><li>專利分析</li><li>Competitor Analysis</li></ul></div>
+      <div class="card"><h4>海外專利申請</h4><ul><li>美國專利</li><li>日本專利</li><li>歐盟專利</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>PoC 成果指標（KPI）— 最好預先定義</h2>
+    <div class="cards">
+      <div class="card"><h4>商業面</h4><ul><li>獲得 MOU</li><li>獲得 LOI</li><li>首張訂單</li></ul></div>
+      <div class="card"><h4>技術面</h4><ul><li>達成性能指標</li><li>通過驗證</li></ul></div>
+      <div class="card"><h4>市場面</h4><ul><li>建立代理商</li><li>找到合作夥伴</li></ul></div>
+    </div>
+  </section>
+
+  <section class="case">
+    <h2>🚀 範例提案：容易拿補助的海外 PoC</h2>
+    <p class="muted" style="margin-bottom:6px">題目</p>
+    <p><strong>AI-Based Thermal Digital Twin for Data Center Energy Optimization</strong></p>
+    <p class="muted" style="margin:14px 0 4px">海外驗證場域</p>
+    <div class="badges">
+      <span class="badge">東南亞資料中心</span>
+      <span class="badge">日本工廠</span>
+      <span class="badge">新加坡算力中心</span>
+    </div>
+    <p class="muted" style="margin:10px 0 4px">驗證內容</p>
+    <ul class="plain">
+      <li>建立熱模擬模型</li>
+      <li>對照實測溫度</li>
+      <li>AI 調整冷卻策略</li>
+      <li>驗證 PUE 改善效果</li>
+    </ul>
+    <p class="muted" style="margin:14px 0 4px">KPI</p>
+    <div class="kpi">
+      <div class="card"><div class="big">−5%</div>PUE 降低 5%</div>
+      <div class="card"><div class="big">−10%</div>冷卻耗電降低 10%</div>
+      <div class="card"><div class="big">&lt;10%</div>模型誤差小於 10%</div>
+    </div>
+    <p style="margin-top:18px">此題目同時符合 <strong>AI 軟體、智慧能源、智慧製造</strong> 三大優先補助領域，競爭力遠高於單純軟體外包或網站開發。</p>
+  </section>
+
+  <footer>資料來源：1110-2.md · 海外 PoC 補助計畫指南</footer>
+</div>
+</body>
+</html>
