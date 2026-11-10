@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMMs 的製造 - 木質單體材料</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7; /* 溫暖的淺米色背景 */
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #546e7a;
+            --accent-color: #8d6e63; /* 木質感的棕色 */
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* 封面樣式 */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            border-top: 5px solid var(--accent-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        /* 內容區塊樣式 */
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-top: 0;
+            color: var(--text-primary);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fafafa;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        /* 重點強調 */
+        .highlight-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #5d4037;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 第 1 頁：封面 -->
+    <header>
+        <h1>WMMs 的製造</h1>
+        <div class="subtitle">木質單體材料：從天然木材到功能材料</div>
+        <div class="meta-info">
+            <p>簡報者：Clark Chen</p>
+            <p>日期：2026-11-08</p>
+        </div>
+    </header>
+
+    <!-- 第 2 頁：大綱 -->
+    <section>
+        <h2>大綱</h2>
+        <ul>
+            <li>什麼是 WMMs</li>
+            <li>製造總覽</li>
+            <li>原料前處理</li>
+            <li>結構調控與乾燥</li>
+            <li>碳化與功能化</li>
+            <li>應用與展望</li>
+        </ul>
+    </section>
+
+    <!-- 第 3 頁：什麼是 WMMs -->
+    <section>
+        <h2>什麼是 WMMs？</h2>
+        <p><strong>WMMs：</strong>Wood-derived Monolithic Materials，木質單體材料</p>
+        <ul>
+            <li>以天然木材為起始材料，保留其連續纖維與多孔結構</li>
+            <li>具備輕質、高孔隙率、可設計性與永續性</li>
+            <li>可製成氣凝膠、泡沫、吸附材、分離膜與導電碳材</li>
+        </ul>
+        <div class="highlight-box">
+            WMMs 常採「由上而下（top-down）」策略，直接修飾木材內部成分與孔隙結構。
+        </div>
+    </section>
+
+    <!-- 第 4 頁：製造總覽 -->
+    <section>
+        <h2>製造總覽</h2>
+        <p><strong>流程：</strong>天然木材 → 清洗裁切 → 脫木素／半纖維素移除 → 溶劑處理 → 乾燥定形 → 碳化（選配） → 表面功能化 → WMMs</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>階段</th>
+                    <th>主要目的</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>前處理</td>
+                    <td>去除雜質、控制尺寸與含水率</td>
+                </tr>
+                <tr>
+                    <td>脫木素</td>
+                    <td>打開孔隙、保留纖維素骨架</td>
+                </tr>
+                <tr>
+                    <td>溶劑處理</td>
+                    <td>調控孔壁與纖維排列</td>
+                </tr>
+                <tr>
+                    <td>乾燥</td>
+                    <td>維持多孔結構、避免塌陷</td>
+                </tr>
+                <tr>
+                    <td>碳化／修飾</td>
+                    <td>賦予導電、疏水或吸附功能</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 第 5 頁：關鍵製程 -->
+    <section>
+        <h2>關鍵製程</h2>
+        <ul>
+            <li><strong>原料選擇：</strong>選用具有連續導管與纖維結構的木材</li>
+            <li><strong>脫木素／半纖維素移除：</strong>選擇性去除木質素，形成高孔隙率骨架</li>
+            <li><strong>溶劑輔助調控：</strong>調整孔壁、纖維排列與毛細輸水能力</li>
+            <li><strong>乾燥定形：</strong>常採冷凍乾燥或超臨界乾燥，避免孔隙塌陷</li>
+            <li><strong>碳化：</strong>在惰性氣氛下轉為多孔碳，提升導電與熱穩定性</li>
+            <li><strong>功能化：</strong>接枝親水、疏水、催化或吸附性材料</li>
+        </ul>
+        <div class="highlight-box">
+            脫木素程度、乾燥方式與碳化條件，是決定 WMMs 性能的核心參數。
+        </div>
+    </section>
+
+    <!-- 第 6 頁：應用與展望 -->
+    <section>
+        <h2>應用與展望</h2>
+        <ul>
+            <li><strong>油水分離：</strong>疏水修飾 WMMs 可高效分離油水混合物</li>
+            <li><strong>水處理：</strong>多孔結構可吸附重金屬、染料與有機污染物</li>
+            <li><strong>光熱轉換：</strong>碳化 WMMs 可用於太陽能界面蒸發</li>
+            <li><strong>感測與能源：</strong>導電碳化骨架可應用於感測器與電極材料</li>
+        </ul>
+        <p><strong>下一步：</strong> 優化脫木素條件、乾燥方法與表面修飾，兼顧機械強度、孔隙率與功能表現。</p>
+    </section>
+
+    <footer>
+        <p>感謝聆聽！Q&A</p>
+    </footer>
+</div>
+
+</body>
+</html>
