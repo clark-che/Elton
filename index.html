@@ -1,480 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>海外PoC驗證計畫書</title>
-
-<style>
-:root{
-    --primary:#005BAC;
-    --secondary:#00A3E0;
-    --bg:#F5F7FA;
-    --card:#FFFFFF;
-    --text:#333;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Microsoft JhengHei",sans-serif;
-}
-
-body{
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.8;
-}
-
-header{
-    background:linear-gradient(120deg,var(--primary),var(--secondary));
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:15px;
-    font-size:1.2rem;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.section{
-    background:var(--card);
-    margin-bottom:25px;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-
-.section h2{
-    color:var(--primary);
-    border-left:6px solid var(--secondary);
-    padding-left:10px;
-    margin-bottom:20px;
-}
-
-.section h3{
-    margin-top:20px;
-    margin-bottom:10px;
-    color:#444;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-}
-
-table th{
-    background:var(--primary);
-    color:white;
-}
-
-table th,table td{
-    border:1px solid #ddd;
-    padding:12px;
-}
-
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#f9f9f9;
-    padding:20px;
-    border-left:5px solid var(--secondary);
-    border-radius:8px;
-}
-
-.timeline{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.timeline div{
-    flex:1;
-    min-width:180px;
-    background:#eef6fc;
-    padding:20px;
-    border-radius:8px;
-}
-
-.kpi{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.kpi-box{
-    background:#f3fafc;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-}
-
-.kpi-value{
-    font-size:2rem;
-    color:var(--primary);
-    font-weight:bold;
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>海外 PoC 驗證計畫書</h1>
-    <p>
-    AI Thermal Digital Twin Platform for Data Center &
-    Advanced Manufacturing Energy Optimization
-    </p>
-</header>
-
-<div class="container">
-
-<section class="section">
-<h2>一、計畫摘要</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>驗證國家</h3>
-日本、新加坡、美國
-</div>
-
-<div class="card">
-<h3>驗證期間</h3>
-12個月
-</div>
-
-<div class="card">
-<h3>主要目標</h3>
-建立海外示範案例與標竿客戶
-</div>
-
-<div class="card">
-<h3>預期成果</h3>
-取得LOI、PoC報告與導入機會
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<h2>二、產業背景與市場需求</h2>
-
-<h3>市場趨勢</h3>
-
-<ul>
-<li>AI算力需求高速成長</li>
-<li>資料中心能源消耗持續增加</li>
-<li>智慧工廠導入數位分身技術</li>
-<li>淨零碳排成為全球趨勢</li>
-</ul>
-
-<h3>客戶痛點</h3>
-
-<table>
-<tr>
-<th>痛點</th>
-<th>影響</th>
-</tr>
-
-<tr>
-<td>能耗過高</td>
-<td>營運成本增加</td>
-</tr>
-
-<tr>
-<td>設備熱點</td>
-<td>降低設備壽命</td>
-</tr>
-
-<tr>
-<td>缺乏預測能力</td>
-<td>提高停機風險</td>
-</tr>
-
-<tr>
-<td>維護效率不足</td>
-<td>增加維運成本</td>
-</tr>
-
-</table>
-
-</section>
-
-<section class="section">
-<h2>三、技術方案</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>Thermal Simulation</h3>
-CFD模擬、熱流分析、熱阻計算
-</div>
-
-<div class="card">
-<h3>Digital Twin</h3>
-建立即時同步之虛實整合模型
-</div>
-
-<div class="card">
-<h3>AI Optimization</h3>
-預測與最佳化冷卻控制策略
-</div>
-
-<div class="card">
-<h3>Dashboard</h3>
-視覺化監控與異常預警系統
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>四、海外 PoC 驗證流程</h2>
-
-<div class="timeline">
-
-<div>
-<h3>Phase 1</h3>
-需求分析<br>
-設備盤點<br>
-資料收集
-</div>
-
-<div>
-<h3>Phase 2</h3>
-模型建置<br>
-系統部署
-</div>
-
-<div>
-<h3>Phase 3</h3>
-場域驗證<br>
-數據監控
-</div>
-
-<div>
-<h3>Phase 4</h3>
-成果評估<br>
-KPI驗證
-</div>
-
-<div>
-<h3>Phase 5</h3>
-商業導入<br>
-複製推廣
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-<h2>五、PoC 驗證 KPI</h2>
-
-<div class="kpi">
-
-<div class="kpi-box">
-<div class="kpi-value">90%</div>
-AI預測準確率
-</div>
-
-<div class="kpi-box">
-<div class="kpi-value"><10%</div>
-模擬誤差
-</div>
-
-<div class="kpi-box">
-<div class="kpi-value">-10%</div>
-冷卻耗電降低
-</div>
-
-<div class="kpi-box">
-<div class="kpi-value">0.05</div>
-PUE改善
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-<h2>六、執行時程</h2>
-
-<table>
-
-<tr>
-<th>階段</th>
-<th>工作項目</th>
-<th>月份</th>
-</tr>
-
-<tr>
-<td>Phase 1</td>
-<td>需求分析</td>
-<td>1~2 月</td>
-</tr>
-
-<tr>
-<td>Phase 2</td>
-<td>技術部署</td>
-<td>3~4 月</td>
-</tr>
-
-<tr>
-<td>Phase 3</td>
-<td>PoC驗證</td>
-<td>5~8 月</td>
-</tr>
-
-<tr>
-<td>Phase 4</td>
-<td>成果分析</td>
-<td>9~10 月</td>
-</tr>
-
-<tr>
-<td>Phase 5</td>
-<td>商業導入</td>
-<td>11~12 月</td>
-</tr>
-
-</table>
-
-</section>
-
-<section class="section">
-<h2>七、預算規劃</h2>
-
-<table>
-
-<tr>
-<th>項目</th>
-<th>內容</th>
-</tr>
-
-<tr>
-<td>人事費</td>
-<td>AI工程師、模擬工程師、PM</td>
-</tr>
-
-<tr>
-<td>設備費</td>
-<td>感測器、伺服器、量測設備</td>
-</tr>
-
-<tr>
-<td>驗證費</td>
-<td>第三方測試與認證</td>
-</tr>
-
-<tr>
-<td>海外費用</td>
-<td>差旅、安裝、場域驗證</td>
-</tr>
-
-</table>
-
-</section>
-
-<section class="section">
-<h2>八、風險管理</h2>
-
-<table>
-
-<tr>
-<th>風險</th>
-<th>對策</th>
-</tr>
-
-<tr>
-<td>數據不足</td>
-<td>增加感測器與量測頻率</td>
-</tr>
-
-<tr>
-<td>模型誤差過高</td>
-<td>建立校正流程</td>
-</tr>
-
-<tr>
-<td>場域配合度不足</td>
-<td>簽訂合作協議</td>
-</tr>
-
-<tr>
-<td>驗證時間延誤</td>
-<td>建立備援時程</td>
-</tr>
-
-</table>
-
-</section>
-
-<section class="section">
-<h2>九、預期效益</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>技術效益</h3>
-技術成熟度提升<br>
-建立可複製平台
-</div>
-
-<div class="card">
-<h3>商業效益</h3>
-建立海外標竿案例<br>
-取得首批訂單
-</div>
-
-<div class="card">
-<h3>社會效益</h3>
-節能減碳<br>
-推動產業升級
-</div>
-
-<div class="card">
-<h3>國際效益</h3>
-拓展海外市場<br>
-提高競爭力
-</div>
-
-</div>
-
-</section>
-
-</div>
-
-<footer>
-2027 Overseas PoC Verification Proposal Template
-</footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中小企業國際市場拓展補助計畫重點整理</title>
+    <style>
+      :root {
+        --bg: #f7f9fc;
+        --card: #ffffff;
+        --ink: #1f2937;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+        --accent: #2563eb;
+        --accent-soft: #eff6ff;
+        --green: #047857;
+        --green-soft: #ecfdf5;
+        --amber: #b45309;
+        --amber-soft: #fffbeb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.75;
+      }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 40px 24px 64px; }
+      header.hero {
+        background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 32px 28px;
+        margin-bottom: 28px;
+      }
+      h1 { margin: 0 0 10px; font-size: 1.7rem; letter-spacing: 0.5px; }
+      .hero p { margin: 4px 0; color: var(--muted); font-size: 0.95rem; }
+      .notice {
+        display: inline-block;
+        margin-top: 12px;
+        background: var(--amber-soft);
+        color: var(--amber);
+        border: 1px solid #fde68a;
+        border-radius: 999px;
+        padding: 4px 14px;
+        font-size: 0.85rem;
+      }
+      section.card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 24px 28px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 0 0 14px;
+        padding-left: 12px;
+        border-left: 4px solid var(--accent);
+        color: #1e3a8a;
+      }
+      ul { margin: 0; padding-left: 22px; }
+      li { margin: 6px 0; }
+      li::marker { color: var(--accent); }
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+      .stat {
+        background: var(--accent-soft);
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        padding: 14px 16px;
+        text-align: center;
+      }
+      .stat .num { font-size: 1.35rem; font-weight: 700; color: var(--accent); }
+      .stat .label { font-size: 0.85rem; color: var(--muted); }
+      .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+      .sub {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px 18px;
+        background: #fbfcfe;
+      }
+      .sub h3 { margin: 0 0 10px; font-size: 1rem; color: #1e3a8a; }
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+      .chips li {
+        background: var(--green-soft);
+        color: var(--green);
+        border: 1px solid #a7f3d0;
+        border-radius: 999px;
+        padding: 4px 14px;
+        font-size: 0.9rem;
+      }
+      .chips.blue li { background: var(--accent-soft); color: var(--accent); border-color: #bfdbfe; }
+      .opportunity {
+        background: #f5f3ff;
+        border: 1px solid #ddd6fe;
+        border-radius: 14px;
+        padding: 20px 24px;
+        margin-top: 4px;
+      }
+      .opportunity h3 { margin: 0 0 8px; color: #5b21b6; font-size: 1.05rem; }
+      footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 28px; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <h1>中小企業國際市場拓展補助計畫重點整理</h1>
+        <p>資料來源：<a href="https://onedrive.live.com/?cid=5B36778A28AF52FA&id=5B36778A28AF52FA!s2d7389d305f54d9b8e379252fc127313&EntityRepresentationId=9821d40e-bf11-4e6b-9b33-959d4c9a5e95" target="_blank" rel="noopener">1110-1.md</a></p>
+        <p>協助中小企業克服進入國際市場的障礙，支持範圍從國際行銷與商機媒合，延伸至驗證、落地、市場導入等環節。</p>
+        <span class="notice">⚠ 目前仍在審議階段，最終內容以政府公告為準</span>
+      </header>
+
+      <section class="card">
+        <h2>計畫背景與經費規模</h2>
+        <div class="stats">
+          <div class="stat"><div class="num">2 億元</div><div class="label">每年預計投入</div></div>
+          <div class="stat"><div class="num">16 億元</div><div class="label">8 年總投入</div></div>
+          <div class="stat"><div class="num">45 案</div><div class="label">每年補助案數（個案 40＋聯盟 5）</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>補助類型</h2>
+        <div class="two-col">
+          <div class="sub">
+            <h3>個案補助</h3>
+            <ul>
+              <li>每年約補助 40 案</li>
+              <li>每案最高補助 250 萬元</li>
+            </ul>
+          </div>
+          <div class="sub">
+            <h3>聯盟補助</h3>
+            <ul>
+              <li>每年約補助 5 案</li>
+              <li>每案最高補助 2,000 萬元</li>
+              <li>需由 3 家以上中小企業組成聯盟</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>補助範疇</h2>
+        <ul class="chips blue">
+          <li>國際認證</li>
+          <li>產品性能測試</li>
+          <li>產品可靠度測試</li>
+          <li>樣品打樣</li>
+          <li>產品適地化</li>
+          <li>海外 PoC（概念驗證）</li>
+          <li>海外場域驗證</li>
+          <li>專利布局與分析</li>
+          <li>國際客戶導入</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>優先聚焦產業</h2>
+        <ul class="chips">
+          <li>智慧醫療</li>
+          <li>智慧製造與機器人</li>
+          <li>精密機械與關鍵零組件</li>
+          <li>智慧能源</li>
+          <li>AI 軟體</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>申請方式（初步規劃）</h2>
+        <ul>
+          <li>個別型補助可能不需繳交完整計畫書</li>
+          <li>個別型補助以提案簡報進行書面審查</li>
+          <li>聯盟型補助採實體審查</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>大學物理系學生可關注的機會</h2>
+        <ul class="chips blue">
+          <li>AI 軟體開發（模擬、CAE、EDA、Digital Twin）</li>
+          <li>智慧製造與機器人控制</li>
+          <li>精密量測儀器與感測器</li>
+          <li>光學檢測、光學模擬與半導體設備</li>
+          <li>智慧能源系統（儲能、熱管理、電網最佳化）</li>
+          <li>海外 PoC 驗證與國際專利布局</li>
+        </ul>
+        <div class="opportunity">
+          <h3>與個人技術方向的連結</h3>
+          <p style="margin:0; color:#4c1d95;">
+            從近期關注的 Thermal Simulation、EDA 工具、先進材料、木材工程材料等方向來看，若未來成立技術公司或加入新創團隊，這類補助有機會支援原型開發、性能驗證、國際認證及海外客戶驗證等工作。
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        本頁面為重點條列整理，詳細內容請參閱
+        <a href="https://onedrive.live.com/?cid=5B36778A28AF52FA&id=5B36778A28AF52FA!s2d7389d305f54d9b8e379252fc127313" target="_blank" rel="noopener">原始文件（1110-1）</a>；計畫仍屬審議階段，以政府正式公告為準。
+      </footer>
+    </div>
+  </body>
 </html>
